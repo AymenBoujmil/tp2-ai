@@ -29,7 +29,7 @@ class Game:
                 print('The AI has visited ',noeud_visite,' nodes!')
                 return action
         choice = random.randint(0, len(Utils.successors(state))-1)
-        print('The AI has visited 2 ', noeud_visite, ' nodes!')
+        print('The AI has visited ', noeud_visite, ' nodes!')
         return Utils.successors(state)[choice]
 
     def play(self, liste):
@@ -62,8 +62,7 @@ class Game:
 def main():
 
     game = Game()
-    print(game.minimax_decision([14]))
-    game.play([5])
+    game.play([15])
 
 if __name__ == '__main__':
     main()

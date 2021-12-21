@@ -30,7 +30,7 @@ class Game:
         noeud_visite = [0]
         v = -1
         for action in Utils.successors(state):
-            if self.minValue(action,-1,1,noeud_visite) > v:
+            if self.minValue(action, -1, 1, noeud_visite) > v:
                 print('The AI has visited ',noeud_visite,' nodes!')
                 return action
         choice = random.randint(0, len(Utils.successors(state))-1)
@@ -66,8 +66,7 @@ class Game:
 def main():
 
     game = Game()
-    print(game.alpha_beta([14]))
-    game.play([10])
+    game.play([15])
 
 
 if __name__ == '__main__':
