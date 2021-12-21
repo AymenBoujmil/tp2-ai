@@ -34,7 +34,7 @@ class Game:
                 print('The AI has visited ',noeud_visite,' nodes!')
                 return action
         choice = random.randint(0, len(Utils.successors(state))-1)
-        print('The AI has visited 2', noeud_visite, ' nodes!')
+        print('The AI has visited ', noeud_visite, ' nodes!')
         return Utils.successors(state)[choice]
 
     def play(self, liste):
